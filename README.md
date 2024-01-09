@@ -2,7 +2,7 @@
 <img src="./image/logo.png" alt="Logo Bootcamp" width="200">
 <h1>Desafio de Projeto:<br>Análise  de Dados Integrada<h1>
 <img src="./image/pinski.png" alt="Covid 19" width="">
-</div><br>
+</div>
 
 # Desafio: Desenvolvimento de relatório para acompanhamento de metas da equipe de vendas e performance dos produtos da loja
  
