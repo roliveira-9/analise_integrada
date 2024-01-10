@@ -1,7 +1,7 @@
 USE PinskiDatabase;
 
 
--- Criando Dimens„o Produto
+-- Criando Dimens√£o Produto
 CREATE VIEW dProduto AS
 SELECT	
 	p.id AS 'produto_id',
@@ -14,7 +14,7 @@ LEFT JOIN CategoriaProduto c
 	ON p.categoria_id = c.id;
 
 
--- Criando Dimens„o Cliente
+-- Criando Dimens√£o Cliente
 CREATE VIEW dCliente AS
 SELECT 
 	c.id AS 'cliente_id',
@@ -30,7 +30,7 @@ LEFT JOIN RegioesBrasil rb
 	ON g.uf = rb.UF;
 
 
--- Criando Dimens„o Vendedor
+-- Criando Dimens√£o Vendedor
 CREATE VIEW dVendedor AS
 SELECT 
 	v.id AS 'vendedor_id',
