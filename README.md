@@ -38,6 +38,8 @@ Atualmente as Lojas Pinsk trabalha com diversos relatórios em Excel espalhados 
 
 1. <strong>Coleta dos Dados:</strong>
     
+    
+
     <br>
 
     <h5 align = "center"> 

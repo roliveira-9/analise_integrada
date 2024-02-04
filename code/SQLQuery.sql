@@ -6,6 +6,7 @@ CREATE VIEW dProduto AS
 SELECT	
 	p.id AS 'produto_id',
 	p.descricao,
+	c.id AS 'categoria_id',
 	c.descricao AS categoria,
 	p.tamanho,
 	p.custoUnitario
@@ -36,6 +37,7 @@ SELECT
 	v.id AS 'vendedor_id',
 	v.descricao AS vendedor,
 	s.descricao AS supervisor,
+	s.gerente_id,
 	s.gerente_descricao AS gerente
 FROM Vendedor v
 LEFT JOIN Supervisor s
@@ -45,7 +47,7 @@ LEFT JOIN Supervisor s
 -- Criando Fato Vendas
 CREATE VIEW fVendas AS
 SELECT 
-	FORMAT(v.[data],'d', 'pt-BR') AS 'data',
+	v.[data],
 	v.nfe,
 	v.cliente_id,
 	cv.vendedor_id,
